@@ -87,6 +87,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('admin.login') }}">Admin</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('weather.show') }}">Weather</a>
+                    </li>
                 </ul>
             </div>
         </div>

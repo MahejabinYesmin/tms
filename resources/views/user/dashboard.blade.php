@@ -59,15 +59,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TMS</a>
+            <a class="navbar-brand" href="#">PMA</a>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="{{ route('welcome') }}">Dashboard</a></li>
-                    
-                    
+                    <li class="nav-item"><a class="nav-link" href="{{ route('packages.index') }}">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('user.bookings') }}">Bookings</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('user.reviews') }}">Reviews</a></li>
-
-         
+                    <li class="nav-item"><a class="nav-link" href="{{ route('group.index') }}">Need a group?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('local_experience.index') }}">Local Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('blog.index') }}">Blog</a></li>
                 </ul>
                 <form method="POST" action="{{ route('user.logout') }}">
                     @csrf
