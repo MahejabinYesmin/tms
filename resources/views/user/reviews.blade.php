@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Reviews - TMS</title>
+    <title>User Reviews - PMA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -53,28 +53,11 @@
         <a class="navbar-brand fw-bold" href="#">PMA</a>
         <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link " href="{{ route('welcome') }}">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('packages.index') }}">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('user.bookings') }}">Bookings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('user.reviews') }}">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('group.index') }}">Need a group?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('local_experience.index') }}">Local Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
-                    </li>
-  
+                <li class="nav-item"><a class="nav-link" href="{{ route('welcome') }}">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('packages.index') }}">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('user.bookings') }}">Bookings</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{ route('user.reviews') }}">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('group.index') }}">Need a group?</a></li>
             </ul>
             <form method="POST" action="{{ route('user.logout') }}">
                 @csrf

@@ -87,7 +87,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('admin.login') }}">Admin</a>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('destinations.index') }}">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('currency.converter') }}">Currency Converter</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('weather.show') }}">Weather</a>
                     </li>
                 </ul>
@@ -148,6 +154,17 @@
         @endif
     </div>
     
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/68085744753e2219109a950b/1ipg99p1e';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
